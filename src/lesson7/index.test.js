@@ -30,15 +30,15 @@ describe('test subtract', () => {
 
 describe('test isUnderAge', () => {
   it('test 1', () => {
-    expect(isUnderAge(18)).toBeTruthy()
+    expect(isUnderAge(18)).toBeFalsy()
   })
 
   it('test 2', () => {
-    expect(isUnderAge(19)).toBeTruthy()
+    expect(isUnderAge(19)).toBeFalsy()
   })
 
   it('test 3', () => {
-    expect(isUnderAge(3)).toBeFalsy()
+    expect(isUnderAge(3)).toBeTruthy()
   })
 })
 

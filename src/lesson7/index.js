@@ -6,7 +6,7 @@
  * -1,0 = -1
  */
 export const sum = (value1, value2) => {
-  return null
+  return value1 + value2
 }
 
 /**
@@ -17,19 +17,19 @@ export const sum = (value1, value2) => {
  * -1,0 = -1
  */
 export const subtract = (value1, value2) => {
-  return null
+  return value1 - value2
 }
 
 /**
  * Criar um algoritmo para descobrir se o usuário é menor de idade
  * se for menor de idade, retornar true, se for maior de idade, retornar false
  * inputs ->
- * 18 = true
- * 19 = true
- * 3 = false
+ * 18 = false
+ * 19 = false
+ * 3 = true
  */
 export const isUnderAge = (age) => {
-  return null
+  return age < 18
 }
 
 /**
@@ -40,7 +40,7 @@ export const isUnderAge = (age) => {
  * 2021 = 1
  */
 export const getAgeByBirthYear = (birthYear) => {
-  return null
+  return new Date().getFullYear() - birthYear
 }
 
 /**
@@ -51,5 +51,10 @@ export const getAgeByBirthYear = (birthYear) => {
  * 8 = 21
  */
 export const fibonacci = (value) => {
-  return null
+  return value < 1
+    ? 0
+    : value <= 2
+    ? 1
+    : fibonacci(value - 1) + fibonacci(value - 2)
 }
+// https://www.interviewcake.com/question/python/nth-fibonacci
