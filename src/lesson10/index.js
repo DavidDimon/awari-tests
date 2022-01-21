@@ -57,7 +57,7 @@ export const pxToRem = (pixels) => {
  * Criar um algoritmo para extrair os valores de um objeto para um array
  * inputs ->
  * {name: 'test', age: 15} = ['test', 15]
- * {name: 'david'} = ['test']
+ * {name: 'david'} = ['david']
  * {isProgrammer: false, name: 'Steve Jobs'} = [false, 'Steve Jobs']
  */
 export const objectToArray = (param) => {
